@@ -42,7 +42,14 @@
     <Compile Include="DataAnnotations\ModelBindAttribute.cs" />
     <Compile Include="DataAnnotations\ModelCollectionAttribute.cs" />
     <Compile Include="DataAnnotations\ModelPropertyAttribute.cs" />
+    <Compile Include="Interfaces\IBaseViewModel.cs" />
+    <Compile Include="Interfaces\IFluentViewModel.cs" />
+    <Compile Include="Interfaces\IGenericFluentInterface.cs" />
+    <Compile Include="Interfaces\IViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Builder\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
