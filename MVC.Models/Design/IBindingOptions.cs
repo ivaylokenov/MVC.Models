@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
 
-    internal interface IBindingOptions
+    public interface IBindingOptions
     {
         IList<string> IncludedNames { get; }
 

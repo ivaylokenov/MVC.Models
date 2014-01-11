@@ -31,6 +31,6 @@
 
         IGenericModelExpressionBuilder<TBase> Categories(IList<string> categories);
 
-        Expression<Func<TBase, TResult>> To<TResult>();
+        Expression<Func<TBase, TResult>> To<TResult>() where TResult : class;
     }
 }

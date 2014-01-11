@@ -19,6 +19,7 @@
         private const string CategoriesNullMessage = "Categories cannot be null";
 
         private readonly IBindingOptions options;
+        private IExpressionGenerator generator;
 
         public ModelExpressionBuilder() 
         {
@@ -119,9 +120,10 @@
             return this;
         }
 
-        public Expression<Func<TBase, TResult>> To<TResult>()
+        public Expression<Func<TBase, TResult>> To<TResult>() where TResult : class
         {
-            throw new NotImplementedException();
+            generator = new ExpressionGenerator<TBase, TResult>(options);
+            return (generator as IGenericExpressionGenerator<TBase, TResult>).Build();
         }
     }
 }

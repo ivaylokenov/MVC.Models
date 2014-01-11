@@ -4,9 +4,18 @@
     using System.Linq.Expressions;
     using Design;
 
-    internal class ExpressionGenerator<TModel, TResult>
+    public class ExpressionGenerator<TBase, TResult> : IGenericExpressionGenerator<TBase, TResult>
+        where TBase : class
+        where TResult : class
     {
-        internal Expression<Func<TModel, TResult>> Build(IBindingOptions options)
+        private IBindingOptions bindingOptions;
+
+        public ExpressionGenerator(IBindingOptions options)
+        {
+            bindingOptions = options;
+        }
+
+        public Expression<Func<TBase, TResult>> Build()
         {
             throw new NotImplementedException();
         }

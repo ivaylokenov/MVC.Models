@@ -48,6 +48,8 @@
     <Compile Include="DataAnnotations\ModelPropertyAttribute.cs" />
     <Compile Include="BindingType.cs" />
     <Compile Include="Design\IBindingOptions.cs" />
+    <Compile Include="Design\IExpressionGenerator.cs" />
+    <Compile Include="Design\IGenericExpressionGenerator.cs" />
     <Compile Include="Design\IModel.cs" />
     <Compile Include="Design\IGenericModelExpressionBuilder.cs" />
     <Compile Include="Extensions\ListExtensions.cs" />

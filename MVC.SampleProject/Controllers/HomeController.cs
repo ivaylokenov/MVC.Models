@@ -22,7 +22,7 @@ namespace MVC.SampleProject.Controllers
                     .ExcludeTypes(BindingType.Properties)
                     .Category("Short")
                     .Cachable(false)
-                    .To<Int32>());
+                    .To<object>());
 
             return View(newList);
         }

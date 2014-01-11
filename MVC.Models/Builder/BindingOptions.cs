@@ -3,9 +3,9 @@
     using System.Collections.Generic;
     using Design;
 
-    internal class BindingOptions : IBindingOptions
+    public class BindingOptions : IBindingOptions
     {
-        internal BindingOptions()
+        public BindingOptions()
         {
             IncludedNames = new List<string>();
             IncludedTypes = new List<BindingType>();
