@@ -2,6 +2,6 @@
 {
     public interface IEmptyModelExpression
     {
-        IGenericModelExpression<TModel> From<TModel>() where TModel : class;
+        IGenericModelExpression<TBase> From<TBase>() where TBase : class;
     }
 }

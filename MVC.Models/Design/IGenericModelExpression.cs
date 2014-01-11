@@ -3,8 +3,9 @@
     using System;
     using System.Linq.Expressions;
 
-    public interface IGenericModelExpression<TModel> : IModelExpression
+    public interface IGenericModelExpression<TBase> : IModelExpression
+        where TBase : class
     {
-        Expression<Func<TModel, TResult>> To<TResult>() where TResult : new();
+        Expression<Func<TBase, TResult>> To<TResult>();
     }
 }
