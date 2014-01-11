@@ -1,6 +1,6 @@
 ﻿namespace MVC.Models
 {
-    public enum BindType
+    public enum BindingType
     {
         All = 0,
         Properties = 1,

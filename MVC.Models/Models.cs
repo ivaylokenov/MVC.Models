@@ -5,9 +5,9 @@
 
     public static class Models
     {
-        public static IGenericModelExpression<TBase> From<TBase>() where TBase : class
+        public static IGenericModelExpressionBuilder<TBase> From<TBase>() where TBase : class
         {
-            return new ModelExpression<TBase>();
+            return new ModelExpressionBuilder<TBase>();
         }
     }
 }

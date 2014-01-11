@@ -19,7 +19,7 @@ namespace MVC.SampleProject.Controllers
                 .AsQueryable()
                 .Select(Models
                     .From<SampleDatabaseModel>()
-                    .Exclude(BindType.Properties)
+                    .ExcludeTypes(BindingType.Properties)
                     .Category("Short")
                     .Cachable(false)
                     .To<Int32>());
