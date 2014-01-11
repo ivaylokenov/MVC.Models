@@ -39,20 +39,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builder\ModelExpression.cs" />
     <Compile Include="DataAnnotations\ModelBindAttribute.cs" />
     <Compile Include="DataAnnotations\ModelCategoryAttribute.cs" />
     <Compile Include="DataAnnotations\ModelCollectionAttribute.cs" />
     <Compile Include="DataAnnotations\ModelPropertyAttribute.cs" />
     <Compile Include="BindType.cs" />
-    <Compile Include="Design\IBaseModel.cs" />
-    <Compile Include="Design\IEmptyModelExpression.cs" />
+    <Compile Include="Design\IModel.cs" />
     <Compile Include="Design\IGenericModelExpression.cs" />
-    <Compile Include="Design\IModelExpression.cs" />
+    <Compile Include="Models.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Builder\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
