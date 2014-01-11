@@ -1,4 +1,4 @@
-﻿namespace MVC.ViewModels.Design
+﻿namespace MVC.Models.Design
 {
     using System;
     using System.Linq.Expressions;

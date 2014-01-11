@@ -1,4 +1,4 @@
-﻿namespace MVC.ViewModels.DataAnnotations
+﻿namespace MVC.Models.DataAnnotations
 {
     using System;
 
