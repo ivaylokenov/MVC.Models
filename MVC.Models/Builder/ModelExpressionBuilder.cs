@@ -4,10 +4,16 @@
     using System.Collections.Generic;
     using System.Linq.Expressions;
     using Design;
+    using Extensions;
 
     public class ModelExpressionBuilder<TBase> : IGenericModelExpressionBuilder<TBase>
         where TBase : class
     {
+        private const string NamesParameter = "names";
+        private const string NamesNullExceptionMessage = "Binding names cannot be null";
+        private const string TypesParameter = "types";
+        private const string TypesNullExceptionMessage = "Binding types cannot be null";
+
         private BindingOptions options;
 
         public ModelExpressionBuilder() 
@@ -17,22 +23,34 @@
 
         public IGenericModelExpressionBuilder<TBase> IncludeNames(params string[] names)
         {
-            throw new NotImplementedException();
+            if (names == null) throw new ArgumentNullException(NamesParameter, NamesNullExceptionMessage);
+
+            options.IncludedNames.AddRange(names);
+            return this;
         }
 
         public IGenericModelExpressionBuilder<TBase> IncludeNames(IList<string> names)
         {
-            throw new NotImplementedException();
+            if (names == null) throw new ArgumentNullException(NamesParameter, NamesNullExceptionMessage);
+
+            options.IncludedNames.AddRange(names);
+            return this;
         }
 
         public IGenericModelExpressionBuilder<TBase> IncludeTypes(params BindingType[] types)
         {
-            throw new NotImplementedException();
+            if (types == null) throw new ArgumentNullException(TypesParameter, TypesNullExceptionMessage);
+
+            options.IncludedTypes.AddRange(types);
+            return this;
         }
 
         public IGenericModelExpressionBuilder<TBase> IncludeTypes(IList<BindingType> types)
         {
-            throw new NotImplementedException();
+            if (types == null) throw new ArgumentNullException(TypesParameter, TypesNullExceptionMessage);
+
+            options.IncludedTypes.AddRange(types);
+            return this;
         }
 
         public IGenericModelExpressionBuilder<TBase> ExcludeNames(params string[] names)

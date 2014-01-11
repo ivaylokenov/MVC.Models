@@ -45,9 +45,10 @@
     <Compile Include="DataAnnotations\ModelCategoryAttribute.cs" />
     <Compile Include="DataAnnotations\ModelCollectionAttribute.cs" />
     <Compile Include="DataAnnotations\ModelPropertyAttribute.cs" />
-    <Compile Include="BindType.cs" />
+    <Compile Include="BindingType.cs" />
     <Compile Include="Design\IModel.cs" />
     <Compile Include="Design\IGenericModelExpressionBuilder.cs" />
+    <Compile Include="Extensions\ListExtensions.cs" />
     <Compile Include="Models.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
