@@ -2,6 +2,7 @@
 {
     using System;
 
+    [AttributeUsage(AttributeTargets.Property)]
     public class ModelBindAttribute : Attribute
     {
         public ModelBindAttribute(string condition)
