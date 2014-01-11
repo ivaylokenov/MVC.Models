@@ -4,11 +4,11 @@
 
     public class ModelBindAttribute : Attribute
     {
-        private string condition;
-
         public ModelBindAttribute(string condition)
         {
-            this.condition = condition;
+            Condition = condition;
         }
+
+        public string Condition { get; set; }
     }
 }
