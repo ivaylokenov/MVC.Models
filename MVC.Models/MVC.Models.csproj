@@ -40,12 +40,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Builder\BindingOptions.cs" />
+    <Compile Include="Builder\ExpressionGenerator.cs" />
     <Compile Include="Builder\ModelExpressionBuilder.cs" />
     <Compile Include="DataAnnotations\ModelBindAttribute.cs" />
     <Compile Include="DataAnnotations\ModelCategoryAttribute.cs" />
     <Compile Include="DataAnnotations\ModelCollectionAttribute.cs" />
     <Compile Include="DataAnnotations\ModelPropertyAttribute.cs" />
     <Compile Include="BindingType.cs" />
+    <Compile Include="Design\IBindingOptions.cs" />
     <Compile Include="Design\IModel.cs" />
     <Compile Include="Design\IGenericModelExpressionBuilder.cs" />
     <Compile Include="Extensions\ListExtensions.cs" />

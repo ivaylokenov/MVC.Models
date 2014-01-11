@@ -1,8 +1,9 @@
 ﻿namespace MVC.Models.Builder
 {
     using System.Collections.Generic;
+    using Design;
 
-    internal class BindingOptions
+    internal class BindingOptions : IBindingOptions
     {
         internal BindingOptions()
         {
@@ -13,16 +14,16 @@
             Categories = new List<string>();
         }
 
-        internal IList<string> IncludedNames { get; set; }
+        public IList<string> IncludedNames { get; private set; }
 
-        internal IList<BindingType> IncludedTypes { get; set; }
+        public IList<BindingType> IncludedTypes { get; private set; }
 
-        internal IList<string> ExcludedNames { get; set; }
+        public IList<string> ExcludedNames { get; private set; }
 
-        internal IList<BindingType> ExcludedTypes { get; set; }
+        public IList<BindingType> ExcludedTypes { get; private set; }
 
-        internal IList<string> Categories { get; set; }
+        public IList<string> Categories { get; set; }
 
-        internal bool Cachable { get; set; }
+        public bool Cachable { get; set; }
     }
 }

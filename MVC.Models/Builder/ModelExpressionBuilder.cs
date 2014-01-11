@@ -18,7 +18,7 @@
         private const string CategoriesParameter = "categories";
         private const string CategoriesNullMessage = "Categories cannot be null";
 
-        private readonly BindingOptions options;
+        private readonly IBindingOptions options;
 
         public ModelExpressionBuilder() 
         {
