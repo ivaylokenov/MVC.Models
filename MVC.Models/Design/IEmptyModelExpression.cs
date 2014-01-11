@@ -1,4 +1,4 @@
-﻿namespace MVC.ViewModels.Interfaces
+﻿namespace MVC.ViewModels.Design
 {
     public interface IEmptyModelExpression
     {
