@@ -2,7 +2,6 @@
 {
     using System;
     using System.Linq.Expressions;
-    using Design;
 
     public interface IGenericModelExpression<TModel> : IModelExpression
     {

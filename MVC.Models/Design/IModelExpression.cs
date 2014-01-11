@@ -1,6 +1,5 @@
 ﻿namespace MVC.Models.Design
 {
-    using System.Collections;
     using System.Collections.Generic;
 
     public interface IModelExpression
